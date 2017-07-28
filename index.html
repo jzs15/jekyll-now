@@ -1,1 +1,94 @@
-﻿科学计算器
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>科学计算器</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+
+</head>
+
+<body onload="load_record()">
+    <table>
+        <tr>
+            <td class="upbar" colspan="5">
+                <select class="sel_mode" onchange="change_calculator(this)">
+                    <option value='calculator' selected="selected">科学计算器</option>
+                    <option value='exchange'>汇率计算器</option>
+                    <option value='draw'>绘制函数</option>
+                    <option value='family'>亲戚称呼计算器</option>
+                </select>
+            </td>
+            <td class="upbar">历史记录</td>
+        </tr>
+        <tr>
+            <td id="input1" colspan="5"></td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td id="input2" colspan="5" rowspan="2">0</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn func"><i>x </i><sup>2</sup></td>
+            <td class="btn func"><i>x <sup>y</sup></i></td>
+            <td class="btn func">sin</td>
+            <td class="btn func">cos</td>
+            <td class="btn func">n!</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn func">√</td>
+            <td class="btn func">10 <i><sup>x</sup></i></td>
+            <td class="btn func">log</td>
+            <td class="btn func">tan</td>
+            <td class="btn func">%</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn" id="change">↑</td>
+            <td class="btn del">CE</td>
+            <td class="btn del">AC</td>
+            <td class="btn del">DEL</td>
+            <td class="btn symbol">÷</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn num">π</td>
+            <td class="btn num">7</td>
+            <td class="btn num">8</td>
+            <td class="btn num">9</td>
+            <td class="btn symbol">×</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn num">e</td>
+            <td class="btn num">4</td>
+            <td class="btn num">5</td>
+            <td class="btn num">6</td>
+            <td class="btn symbol">-</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn func">±</td>
+            <td class="btn num">1</td>
+            <td class="btn num">2</td>
+            <td class="btn num">3</td>
+            <td class="btn symbol">+</td>
+            <td class="record"></td>
+        </tr>
+        <tr>
+            <td class="btn bracket">(</td>
+            <td class="btn bracket">)</td>
+            <td class="btn num">0</td>
+            <td class="btn num">.</td>
+            <td class="btn" id="equal">=</td>
+            <td class="record"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript" src="calculator.js"></script>
+</html>
