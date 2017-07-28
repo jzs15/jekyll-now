@@ -1,4 +1,4 @@
-var is_active = 1;
+﻿var is_active = 1;
 
 var request = new XMLHttpRequest();
 var xmlrate = '1';
@@ -105,11 +105,11 @@ function OneDelete() {
 
 function update_data() {
     if(is_active == 1) {
-    var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%3D%22' +
+    var url = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%3D%22' +
         elem_sel1.value + elem_sel2.value + '%22&format=xml&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
     }
     else {
-        var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%3D%22' +
+        var url = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%3D%22' +
         elem_sel2.value + elem_sel1.value + '%22&format=xml&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
     }
     request.open("GET", url, true);
