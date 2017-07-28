@@ -1,4 +1,4 @@
-
+﻿
 const isp = { '#': 0, '(': 1, '×': 5, '÷': 5, '+': 3, '-': 3, ')': 6 };
 const icp = { '#': 0, '(': 6, '×': 4, '÷': 4, '+': 2, '-': 2, ')': 1 };
 const eps = 1e-5;
@@ -73,7 +73,6 @@ function debug() {
         elem_input1.innerHTML = '';
         elem_input2.innerText = '0';
     }
-    console.log("secret_input", secret_input);
 }
 
 
